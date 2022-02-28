@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         mainContainer = findViewById(R.id.mainContainer)
         customView = findViewById(R.id.customView)
+        customView.setText(this.application.getString(R.string.app_name))
     }
 
     fun updateView(view: View) {
